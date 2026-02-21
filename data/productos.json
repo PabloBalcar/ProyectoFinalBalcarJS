@@ -1,0 +1,31 @@
+[{
+        "id": 1,
+        "nombre": "Notebook",
+        "precio": 1500000,
+        "categoria": "Computadoras"
+    },
+    {
+        "id": 2,
+        "nombre": "Mouse Gamer",
+        "precio": 100000,
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 3,
+        "nombre": "Teclado Mecánico",
+        "precio": 80000,
+        "categoria": "Accesorios"
+    },
+    {
+        "id": 4,
+        "nombre": "Monitor 24''",
+        "precio": 150000,
+        "categoria": "Monitores"
+    },
+    {
+        "id": 5,
+        "nombre": "Auriculares",
+        "precio": 50000,
+        "categoria": "Audio"
+    }
+]

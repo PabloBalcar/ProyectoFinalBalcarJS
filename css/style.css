@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #f3f4f6;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    color: #60a5fa;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #374151;
+    padding-bottom: 5px;
+}
+
+#contenedorProductos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.producto {
+    background-color: #1f2937;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.producto h3 {
+    margin-bottom: 10px;
+    color: #93c5fd;
+}
+
+.producto p {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.producto button {
+    background-color: #2563eb;
+    color: white;
+}
+
+.producto button:hover {
+    background-color: #1d4ed8;
+}
+
+#contenedorCarrito {
+    margin-top: 15px;
+    background-color: #1f2937;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+.itemCarrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #374151;
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.itemCarrito button {
+    background-color: #dc2626;
+    color: white;
+}
+
+.itemCarrito button:hover {
+    background-color: #b91c1c;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+}
+
+#vaciarCarrito {
+    background-color: #f59e0b;
+    color: black;
+    margin-top: 10px;
+}
+
+#vaciarCarrito:hover {
+    background-color: #d97706;
+}
+
+#finalizarCompra {
+    background-color: #10b981;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#finalizarCompra:hover {
+    background-color: #059669;
+}
