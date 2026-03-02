@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>TechStore</title>
@@ -15,38 +14,68 @@
     <script defer src="js/main.js"></script>
     <script defer src="js/cart.js"></script>
     <script defer src="js/checkout.js"></script>
-</head> 
+</head>
 <body>
 
-    <h1>TechStore</h1>
+<h1>TechStore</h1>
 
-    <h2>Productos</h2>
-    <div id="contenedorProductos"></div>
+<h2>Productos</h2>
+<div id="contenedorProductos"></div>
 
-    <h2>Carrito</h2>
-    <div id="contenedorCarrito"></div>
+<h2>Carrito</h2>
+<div id="contenedorCarrito"></div>
 
-    <h3>Total: $<span id="total">0</span></h3>
+<h3>Total: $<span id="total">0</span></h3>
 
-    <button id="vaciarCarrito">Vaciar carrito</button>
-    <button id="finalizarCompra">Finalizar compra</button>
+<button id="vaciarCarrito">Vaciar carrito</button>
+<button id="finalizarCompra">Finalizar compra</button>
 
-    <div id="modalCheckout" class="modal hidden">
-        <div class="modalContenido">
-            <h2>Finalizar Compra</h2>
+<!-- MODAL CHECKOUT -->
+<div id="modalCheckout" class="modal hidden">
+    <div class="modalContenido">
+        <h2>Finalizar Compra</h2>
 
-            <form id="formCheckout">
-                <input type="text" id="nombre" placeholder="Nombre completo" required>
-                <input type="text" id="direccion" placeholder="Dirección" required>
-                <input type="tel" id="telefono" placeholder="Teléfono" required>
-                <input type="email" id="email" placeholder="Email" required>
+        <form id="formCheckout">
 
-                <button type="submit">Confirmar compra</button>
-                <button type="button" id="cancelarCheckout">Cancelar</button>
-            </form>
-        </div>
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+            <input type="email" id="email" placeholder="Email" required>
+
+            <select id="envio" required>
+                <option value="0">Retiro en sucursal (Gratis)</option>
+                <option value="2000">Envío estándar ($2000)</option>
+                <option value="4000">Envío express ($4000)</option>
+            </select>
+
+            <input type="text" id="codigoDescuento" placeholder="Código de descuento">
+
+            <select id="metodoPago" required>
+                <option value="">Seleccionar método de pago</option>
+                <option value="tarjeta">Tarjeta de crédito</option>
+                <option value="debito">Tarjeta de débito</option>
+                <option value="transferencia">Transferencia bancaria</option>
+                <option value="efectivo">Efectivo</option>
+            </select>
+
+            <div id="datosTarjeta" class="hidden">
+                <input type="text" id="numeroTarjeta" placeholder="Número de tarjeta (16 dígitos)">
+                <input type="text" id="vencimiento" placeholder="MM/AA">
+                <input type="text" id="cvv" placeholder="CVV (3 dígitos)">
+
+                <select id="cuotas" class="hidden">
+                    <option value="1">1 cuota sin interés</option>
+                    <option value="3">3 cuotas +10%</option>
+                    <option value="6">6 cuotas +20%</option>
+                </select>
+            </div>
+
+            <button type="submit">Confirmar compra</button>
+            <button type="button" id="cancelarCheckout">Cancelar</button>
+
+        </form>
     </div>
+</div>
 
 </body>
-
 </html>
