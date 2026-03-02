@@ -26,8 +26,13 @@ function mostrarProductos() {
     contenedorProductos.innerHTML = "";
 
     productos.forEach(producto => {
+
         const div = document.createElement("div");
         div.classList.add("producto");
+
+        const img = document.createElement("img");
+        img.src = producto.imagen;
+        img.alt = producto.nombre;
 
         const titulo = document.createElement("h3");
         titulo.textContent = producto.nombre;
@@ -39,6 +44,7 @@ function mostrarProductos() {
         boton.textContent = "Agregar al carrito";
         boton.addEventListener("click", () => agregarAlCarrito(producto.id));
 
+        div.appendChild(img);
         div.appendChild(titulo);
         div.appendChild(precio);
         div.appendChild(boton);
@@ -47,4 +53,4 @@ function mostrarProductos() {
     });
 }
 
-cargarProductos();  
+cargarProductos();

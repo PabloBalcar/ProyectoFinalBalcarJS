@@ -2,30 +2,35 @@
         "id": 1,
         "nombre": "Notebook",
         "precio": 1500000,
-        "categoria": "Computadoras"
+        "categoria": "Computadoras",
+        "imagen": "assets/notebook.webp"
     },
     {
         "id": 2,
         "nombre": "Mouse Gamer",
         "precio": 100000,
-        "categoria": "Accesorios"
-    }, 
+        "categoria": "Accesorios",
+        "imagen": "assets/mouse.webp"
+    },
     {
         "id": 3,
         "nombre": "Teclado Mecánico",
         "precio": 80000,
-        "categoria": "Accesorios"
+        "categoria": "Accesorios",
+        "imagen": "assets/teclado.webp"
     },
     {
         "id": 4,
         "nombre": "Monitor 24''",
         "precio": 150000,
-        "categoria": "Monitores"
+        "categoria": "Monitores",
+        "imagen": "assets/monitor.webp"
     },
     {
         "id": 5,
         "nombre": "Auriculares",
         "precio": 50000,
-        "categoria": "Audio"
+        "categoria": "Audio",
+        "imagen": "assets/notebook.webp"
     }
 ]
