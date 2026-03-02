@@ -9,7 +9,7 @@
         "nombre": "Mouse Gamer",
         "precio": 100000,
         "categoria": "Accesorios"
-    },
+    }, 
     {
         "id": 3,
         "nombre": "Teclado Mecánico",

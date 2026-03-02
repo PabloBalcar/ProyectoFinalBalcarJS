@@ -47,4 +47,4 @@ function mostrarProductos() {
     });
 }
 
-cargarProductos();
+cargarProductos();  

@@ -9,7 +9,7 @@ botonFinalizar.addEventListener("click", () => {
         return;
     }
     modal.classList.remove("hidden");
-});
+}); 
 
 botonCancelar.addEventListener("click", () => {
     modal.classList.add("hidden");

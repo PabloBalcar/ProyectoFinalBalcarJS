@@ -6,7 +6,7 @@ const botonVaciar = document.getElementById("vaciarCarrito");
 
 function agregarAlCarrito(id) {
     const productoExistente = carrito.find(p => p.id === id);
-
+ 
     if (productoExistente) {
         productoExistente.cantidad++;
     } else {
